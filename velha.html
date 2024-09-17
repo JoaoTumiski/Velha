@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="./velha.css">
+<body>
+    <section class="Velha">
+        <div class="flex">
+            <div class="interface">
+                <h3 id="placar"></h3>
+
+                <h1>Jogo Da Velha</h1>
+
+                <div class="tabuleiro">
+                    <button id="q1" class="quadrado" onclick="Selecionado(1)"></button>
+                    <button id="q2" class="quadrado" onclick="Selecionado(2)"></button>
+                    <button id="q3" class="quadrado" onclick="Selecionado(3)"></button>
+
+                    <button id="q4" class="quadrado" onclick="Selecionado(4)"></button>
+                    <button id="q5" class="quadrado" onclick="Selecionado(5)"></button>
+                    <button id="q6" class="quadrado" onclick="Selecionado(6)"></button>
+
+                    <button id="q7" class="quadrado" onclick="Selecionado(7)"></button>
+                    <button id="q8" class="quadrado" onclick="Selecionado(8)"></button>
+                    <button id="q9" class="quadrado" onclick="Selecionado(9)"></button>
+                </div>
+
+                <h3>Jogador da vez (<span id="player">X</span>)</h3>
+                
+            </div>
+            <img src="./imagens/Velha.jpeg">
+        </div>
+    </section>
+    <script src="velha.js"></script>
+</body>
+</html>

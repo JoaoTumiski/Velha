@@ -1,0 +1,92 @@
+*{
+    font-family: cursive;
+    --size: 150px;
+    --color: #d1bdbd;
+    background: radial-gradient(
+      circle at 15% 30%,
+      transparent 40%,
+      var(--color) 41%
+    ),
+    radial-gradient(circle at 85% 30%, transparent 40%, var(--color) 41%),
+    radial-gradient(circle at 50% 70%, transparent 40%, var(--color) 41%),
+    radial-gradient(circle at 15% 70%, transparent 40%, var(--color) 41%),
+    radial-gradient(circle at 85% 70%, transparent 40%, var(--color) 41%),
+    linear-gradient(
+      45deg,
+      var(--color) 25%,
+      rgba(0, 0, 0, 0.067) 0,
+      rgba(0, 0, 0, 0.067) 50%,
+      var(--color) 0,
+      var(--color) 75%,
+      #1111 0,
+      #1111 100%,
+      var(--color) 0
+    );
+  background-size: var(--size) var(--size);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#placar{
+    background: #d894e6;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+h3{
+    text-align: left;
+}
+
+img{
+    mix-blend-mode: multiply;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.tabuleiro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    z-index: 2;
+}
+
+.quadrado{
+    height: 90px;
+    width: 90px;
+    z-index: 2;
+    border: 1px solid black;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 880px) {
+    img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .quadrado{
+        height: 70px;
+        width: 70px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
